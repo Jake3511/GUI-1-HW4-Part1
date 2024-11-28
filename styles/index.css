@@ -1,0 +1,84 @@
+/*
+File: index.css
+GUI Assignment: Homework 3, Creating an Interactive Dynamic Table
+Jake Shick, UMass Lowell Computer Science, jake_shick@student.uml.edu
+Copyright (c) 2024 by Shick. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by JS on October 30, 2024 at 2:15 PM.
+*/
+
+/*
+tableContainer is made to have specific colors for the cells to improve the organization and overall look of the table.  It also checks for overflow by condensing 
+down on smaller systems and devices.
+*/
+body {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font-family: monospace;
+}
+
+header h1 {
+    color: black;
+    font-weight: normal;
+    font-size: 50px;
+    background-color: white;
+    text-align: center;
+    border-top: black solid 3px;
+    border-bottom: black solid 3px;
+    padding: 15px 0;
+}
+
+ul li input {
+    list-style-type: none;
+    display: block;
+    width: 80%;
+    
+}
+
+li {
+    padding: 10px 0;
+    list-style-type: none;
+    
+}
+
+input {
+    border-radius: 4px;
+    width: 20%;
+    border-color: rgb(201, 201, 201);
+    padding: 10px 0;
+}
+
+#tableContainer { 
+    display: block;
+    overflow: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#tableContainer table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tableContainer th,
+#tableContainer td {
+    border: solid 1px black;
+    padding: 8px;
+    text-align: center;
+}
+
+#tableContainer th {
+    background-color: lightblue;
+}
+
+#tableContainer th:hover {
+    cursor: pointer;
+    background-color: rgb(144, 182, 195);
+}
+
+#tableContainer td:nth-child(even) {
+    background-color: red;
+}
+
+#tableContainer td:nth-child(odd) {
+    background-color: orange;
+}
